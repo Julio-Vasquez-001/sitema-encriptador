@@ -1,0 +1,144 @@
+* {
+    background: #f3f5fc;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.logo {
+    padding: 10px;
+    width: 40%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.text-area, .mensaje {
+    width: 100%;
+    max-width: 5000px;
+    height: 150px;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: #0A3871;
+    text-transform: lowercase;
+    resize: none;
+}
+
+.text-area:focus, .mensaje:focus {
+    outline: none;
+}
+
+.mensaje {
+    background: white;
+    background-image: url(./img/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.mensaje.sin-imagen {
+    background-image: none;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.informacion {
+    color: #495057;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+button {
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn-encriptar {
+    background-color: #0A3871;
+    color: white;
+}
+
+.btn-desencriptar {
+    background-color: #f3f5fc;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+.btn-copiar {
+    background-color: #0A3871;
+    color: white;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 15%;
+    }
+
+    main {
+        margin: 40px auto;
+    }
+
+    .text-area, .mensaje {
+        height: 200px;
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    .informacion {
+        font-size: 16px;
+        margin: 20px 0;
+    }
+
+    .botones {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    button {
+        margin: 20px;
+        height: 60px;
+        font-size: 20px;
+    }
+}
+
